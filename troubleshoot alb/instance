@@ -1,0 +1,11 @@
+1.Check out the health check time and configure it correctly to complete the health check.
+2.Check server is health
+3.Check ports are open at firewalls
+4.Commands used in server.
+For http health checks
+ curl -vo /dev/null http://publicip
+ HTTP/1.1 200 OK ( if it is non 200 response the health check fails)
+For TCP health checks
+telnet private-IP-address-of-the-instance port
+use the link to get more details
+https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/ts-elb-healthcheck.html
